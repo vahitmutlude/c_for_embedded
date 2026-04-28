@@ -19,3 +19,5 @@
 - comparison operators: >, ==  — result is 0 or 1
 - logical operators: &&, ||, !
 - uint8_t overflow: 2004 doesn't fit in 8 bits, max is 255
+- Learned bitwise operators: | to set a bit, & ~ to clear a bit, << to shift
+- To set bit n: reg | (1 << n), to clear bit n: reg & ~(1 << n)
