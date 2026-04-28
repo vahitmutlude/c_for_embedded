@@ -11,3 +11,11 @@
 - Calling a function using void
 - Using global integers
 - Difference between static int and a normal local int
+
+## Day 3 — 28.04.2026
+- printf format specifiers: %d, %u, %x, %X
+- hex output: decimal 2004 = 0x7D4
+- arithmetic operators: +, -, *, %
+- comparison operators: >, ==  — result is 0 or 1
+- logical operators: &&, ||, !
+- uint8_t overflow: 2004 doesn't fit in 8 bits, max is 255
