@@ -21,3 +21,13 @@
 - uint8_t overflow: 2004 doesn't fit in 8 bits, max is 255
 - Learned bitwise operators: | to set a bit, & ~ to clear a bit, << to shift
 - To set bit n: reg | (1 << n), to clear bit n: reg & ~(1 << n)
+
+## Day 4 — 29.04.2026
+- if / else if / else for branching based on conditions
+- || means OR, && means AND — be careful which one you need
+- switch / case for handling multiple discrete values, like a state machine
+- break exits a switch case, default handles unmatched values
+- while loop checks the condition first, do-while runs at least once
+- in embedded, main() always has a while(1) that runs forever
+- for loop has 3 parts: start, condition, increment
+- break exits the loop completely, continue skips to the next iteration
