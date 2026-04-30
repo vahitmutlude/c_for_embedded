@@ -31,3 +31,9 @@
 - in embedded, main() always has a while(1) that runs forever
 - for loop has 3 parts: start, condition, increment
 - break exits the loop completely, continue skips to the next iteration
+
+## Day 5 — 30.04.2026
+- functions are reusable code blocks: return_type name(parameters) { ... }
+- void means "returns nothing", but can still take parameters
+- the void in main(void) means "takes no parameters" so different meaning depending on position
+- in embedded, code is split into small functions like read_sensor(), set_led()
