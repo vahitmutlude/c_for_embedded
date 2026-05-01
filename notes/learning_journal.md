@@ -24,7 +24,7 @@
 
 ## Day 4 — 29.04.2026
 - if / else if / else for branching based on conditions
-- || means OR, && means AND — be careful which one you need
+- || means OR, && means AND but be careful which one you need
 - switch / case for handling multiple discrete values, like a state machine
 - break exits a switch case, default handles unmatched values
 - while loop checks the condition first, do-while runs at least once
@@ -37,3 +37,12 @@
 - void means "returns nothing", but can still take parameters
 - the void in main(void) means "takes no parameters" so different meaning depending on position
 - in embedded, code is split into small functions like read_sensor(), set_led()
+
+## Day 6 — 01.05.2026
+- pass by value: function gets a copy, original variable doesn't change
+- to modify the original, you need pointers (later in step 24)
+- header (.h) declares functions, source (.c) defines them
+- header guard (#ifndef / #define / #endif) prevents double inclusion
+- a .c + .h pair is called a module and standard in embedded projects
+- multi-file compile: each .c becomes a .o, then linker combines them
+- "undefined reference" error means the linker can't find the function
