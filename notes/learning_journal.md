@@ -46,3 +46,10 @@
 - a .c + .h pair is called a module and standard in embedded projects
 - multi-file compile: each .c becomes a .o, then linker combines them
 - "undefined reference" error means the linker can't find the function
+
+## Day 7 — 02.05.2026
+- preprocessor runs before the compiler, processes lines starting with #
+- #define is text replacement, no semicolon at the end
+- #ifdef / #endif: code inside is compiled only if the macro is defined
+- in production, comment out #define DEBUG to remove all debug prints from the binary
+- no semicolon after #define and the preprocessor will replace literally
