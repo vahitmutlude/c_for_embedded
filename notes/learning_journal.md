@@ -53,3 +53,9 @@
 - #ifdef / #endif: code inside is compiled only if the macro is defined
 - in production, comment out #define DEBUG to remove all debug prints from the binary
 - no semicolon after #define and the preprocessor will replace literally
+
+## Day 8 — 03.05.2026
+- const makes a variable read-only and compiler throws an error if you try to change it
+- difference from #define: const is type-checked and lives in memory, #define is just text replacement
+- in embedded, const variables can be stored in flash instead of RAM, saving precious RAM space
+- useful for big lookup tables that never change
