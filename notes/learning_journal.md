@@ -59,3 +59,12 @@
 - difference from #define: const is type-checked and lives in memory, #define is just text replacement
 - in embedded, const variables can be stored in flash instead of RAM, saving precious RAM space
 - useful for big lookup tables that never change
+
+## Day 9 — 04.05.2026
+- recursion: a function calling itself, needs a base case to stop
+- each call adds to the stack — too many calls cause stack overflow
+- in embedded, recursion is avoided because stack is small (e.g. 4KB on STM32)
+- always prefer for/while loop when possible
+- never use recursion in interrupt handlers
+- in hardware TODAY IS MY BIRTHDAY!
+
