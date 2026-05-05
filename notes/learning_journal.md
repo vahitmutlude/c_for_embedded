@@ -68,3 +68,9 @@
 - never use recursion in interrupt handlers
 - in hardware TODAY IS MY BIRTHDAY!
 
+## Day 10 — 05.05.2026
+- arrays hold multiple values of the same type under one name
+- indexing starts at 0 — array[0] is the first element
+- writing past the array (e.g. array[5] in a size-5 array) reads garbage, no error from C
+- standard loop pattern: for (int i = 0; i < SIZE; i++)
+- use #define SIZE instead of hardcoding the number — easier to change later
