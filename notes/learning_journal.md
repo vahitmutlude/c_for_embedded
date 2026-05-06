@@ -74,3 +74,11 @@
 - writing past the array (e.g. array[5] in a size-5 array) reads garbage, no error from C
 - standard loop pattern: for (int i = 0; i < SIZE; i++)
 - use #define SIZE instead of hardcoding the number — easier to change later
+
+## Day 11 — 06.05.2026
+- array elements are stored side by side in memory, no gaps
+- & operator gives the address of a variable
+- %p is the correct format specifier for addresses
+- uint8_t array: each element is 1 byte apart
+- uint32_t array: each element is 4 bytes apart
+- this is the foundation of pointer arithmetic
