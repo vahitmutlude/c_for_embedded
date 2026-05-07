@@ -82,3 +82,11 @@
 - uint8_t array: each element is 1 byte apart
 - uint32_t array: each element is 4 bytes apart
 - this is the foundation of pointer arithmetic
+
+## Day 12 — 07.05.2026
+- in C, a string is just a char array ending with \0 (null terminator)
+- char name[] = "Vahit" so compiler automatically adds \0 at the end
+- sizeof("Vahit") = 6, not 5 — because of the \0
+- %s prints until \0, %c prints one character
+- loop pattern: name[i] != '\0' and stops at null terminator without knowing array size
+- in embedded, missing \0 means UART sends garbage or program crashes
