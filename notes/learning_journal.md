@@ -86,7 +86,15 @@
 ## Day 12 — 07.05.2026
 - in C, a string is just a char array ending with \0 (null terminator)
 - char name[] = "Vahit" so compiler automatically adds \0 at the end
-- sizeof("Vahit") = 6, not 5 — because of the \0
+- sizeof("Vahit") = 6, not 5  because of the \0
 - %s prints until \0, %c prints one character
 - loop pattern: name[i] != '\0' and stops at null terminator without knowing array size
 - in embedded, missing \0 means UART sends garbage or program crashes
+
+## Day 13 - 08.05.2026 
+- #include <string.h> needed for string functions
+- strlen(s) : counts characters without \0
+- strcpy(dst, src) : copies src into dst, dst must be large enough
+- strcat(dst, src) : appends src to dst, remember to add space manually
+- strcmp(s1, s2) : returns 0 if equal, never use == to compare strings
+- buffer overflow risk: always make destination array large enough
