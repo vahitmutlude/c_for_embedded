@@ -98,3 +98,10 @@
 - strcat(dst, src) : appends src to dst, remember to add space manually
 - strcmp(s1, s2) : returns 0 if equal, never use == to compare strings
 - buffer overflow risk: always make destination array large enough
+
+## Day 14 - 09.05.2026
+- 2D array: int matrix[rows][cols], access with matrix[row][col]
+- in memory, stored row by row (row-major) also no gaps
+- nested for loops to traverse: outer for rows, inner for columns
+- printf("\n") after inner loop to move to next line
+- embedded use: LED matrix, sensor data tables, image buffers
