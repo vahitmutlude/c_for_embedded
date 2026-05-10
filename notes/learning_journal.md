@@ -105,3 +105,13 @@
 - nested for loops to traverse: outer for rows, inner for columns
 - printf("\n") after inner loop to move to next line
 - embedded use: LED matrix, sensor data tables, image buffers
+
+## Day 15 - 10.05.2026
+- pointer is a variable that stores an address, not a value
+- int *p means "p will hold the address of an int"
+- & gives the address of a variable: &x
+- * dereferences: *p means "go to that address and read/write the value"
+- p and &x are the same and both are x's address
+- *p and x are the same and both give 2026
+- *p = 99 changes x without touching x directly
+- %p for addresses, %d for values and never mix them
