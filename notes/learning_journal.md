@@ -115,3 +115,11 @@
 - *p and x are the same and both give 2026
 - *p = 99 changes x without touching x directly
 - %p for addresses, %d for values and never mix them
+
+## Day 16 - 11.05.2026
+- pass by reference: send the address of a variable to a function
+- function parameter is int *p means take a pointer to int
+- call with &x means "give the address of x"
+- *p = 99 inside the function changes the original variable
+- difference from pass by value: original changes, not a copy
+- embedded use: return multiple values from one function using pointers
