@@ -123,3 +123,12 @@
 - *p = 99 inside the function changes the original variable
 - difference from pass by value: original changes, not a copy
 - embedded use: return multiple values from one function using pointers
+
+## Day 17 - 12.05.2026
+- pointer arithmetic moves by the size of the pointed type, not by 1 byte
+- int *p: p+1 jumps 4 bytes (one int), uint8_t *p: p+1 jumps 1 byte
+- *(p+i) means "go to address p+i, read the value there"
+- be careful with parentheses: *p+i is different from *(p+i)
+- *p+i = take the value at p, then add i (wrong for traversal)
+- *(p+i) = go to address p+i, read value (correct for traversal)
+- embedded use: traversing UART buffers, DMA transfers
