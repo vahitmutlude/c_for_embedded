@@ -62,7 +62,7 @@
 
 ## Day 9 — 04.05.2026
 - recursion: a function calling itself, needs a base case to stop
-- each call adds to the stack — too many calls cause stack overflow
+- each call adds to the stack and too many calls cause stack overflow
 - in embedded, recursion is avoided because stack is small (e.g. 4KB on STM32)
 - always prefer for/while loop when possible
 - never use recursion in interrupt handlers
@@ -70,10 +70,10 @@
 
 ## Day 10 — 05.05.2026
 - arrays hold multiple values of the same type under one name
-- indexing starts at 0 — array[0] is the first element
+- indexing starts at 0 and array[0] is the first element
 - writing past the array (e.g. array[5] in a size-5 array) reads garbage, no error from C
 - standard loop pattern: for (int i = 0; i < SIZE; i++)
-- use #define SIZE instead of hardcoding the number — easier to change later
+- use #define SIZE instead of hardcoding the number and easier to change later
 
 ## Day 11 — 06.05.2026
 - array elements are stored side by side in memory, no gaps
@@ -132,3 +132,12 @@
 - *p+i = take the value at p, then add i (wrong for traversal)
 - *(p+i) = go to address p+i, read value (correct for traversal)
 - embedded use: traversing UART buffers, DMA transfers
+
+## Day 18 - 13.05.2026
+- in C, array name is actually the address of the first element
+- arr is the same as &arr[0]
+- arr[i] is the same as *(arr+i) so compiler converts one to the other
+- you can use [] on a pointer too: p[i] works
+- pointer is movable: p = p+1 makes it point to the next element
+- when you pass an array to a function, you're really passing a pointer
+- function can't know array size with sizeof and always pass size as a parameter
