@@ -141,3 +141,12 @@
 - pointer is movable: p = p+1 makes it point to the next element
 - when you pass an array to a function, you're really passing a pointer
 - function can't know array size with sizeof and always pass size as a parameter
+
+## Day 19 - 14.05.2026
+- three const + pointer combinations, depends on where const sits
+- const int *p : value is read-only, pointer can move
+- int * const p : pointer is fixed, value can change
+- const int * const p : both are locked
+- rule: const before * locks the value, const after * locks the pointer
+- common in embedded: function parameters like const int *buf mean "I will only read this"
+- hardware register pointers are often int * const : fixed address, writable value
