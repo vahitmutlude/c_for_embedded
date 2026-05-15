@@ -150,3 +150,11 @@
 - rule: const before * locks the value, const after * locks the pointer
 - common in embedded: function parameters like const int *buf mean "I will only read this"
 - hardware register pointers are often int * const : fixed address, writable value
+
+## Day 20 - 15.05.2026
+- NULL is a special pointer value meaning "points to nothing"
+- writing to a NULL pointer crashes the program and segmentation fault
+- always check before using a pointer: if (p != NULL) { ... }
+- short form: if (p) and same as p != NULL
+- in embedded, NULL check is a defensive programming basic
+- functions that take pointers should null-check at the top and return early if NULL
