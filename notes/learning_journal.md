@@ -158,3 +158,12 @@
 - short form: if (p) and same as p != NULL
 - in embedded, NULL check is a defensive programming basic
 - functions that take pointers should null-check at the top and return early if NULL
+
+## Day 21 - 16.05.2026
+- pointer to pointer: a pointer that holds the address of another pointer
+- int **pp means "pointer to a pointer to int"
+- pp holds p's address, *pp gives p's value (= x's address), **pp gives x's value
+- each * dereferences one level
+- pointer type must match what it points to and int *p needs int **pp to hold its address
+- common in embedded: changing a pointer itself from inside a function, char *argv in main
+- PHASE A DONE also 30 steps finished. C basics, control flow, functions, pointers.
