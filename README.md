@@ -1,8 +1,6 @@
 # C for Industrial Automation
 
-Hands-on C programming with industrial automation in mind —
-PLC-adjacent firmware patterns, fieldbus protocols, control logic,
-and process state machines.
+Hands-on C programming with industrial automation in mind. PLC-adjacent firmware patterns, fieldbus protocols, control logic, and process state machines.
 
 ## About this repo
 
