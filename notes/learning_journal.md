@@ -167,3 +167,11 @@
 - pointer type must match what it points to and int *p needs int **pp to hold its address
 - common in embedded: changing a pointer itself from inside a function, char *argv in main
 - PHASE A DONE also 30 steps finished. C basics, control flow, functions, pointers.
+
+## Day 22 - 23.05.2026
+- struct groups related variables into one package (a DI channel needs channel_id and value together)
+- defining a struct does NOT use memory, it is just a recipe, no variable yet
+- create a real variable with: struct DigitalInput di_start;
+- access fields with the dot operator: di_start.value = 1;
+- the ; after the closing brace }; is required, forgot it first try and got "expected ';'" error
+- in automation a C struct is the same idea as a TIA Portal PLC-Datentyp and IEC 61131-3 DUT
