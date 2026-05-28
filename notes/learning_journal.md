@@ -175,3 +175,12 @@
 - access fields with the dot operator: di_start.value = 1;
 - the ; after the closing brace }; is required, forgot it first try and got "expected ';'" error
 - in automation a C struct is the same idea as a TIA Portal PLC-Datentyp and IEC 61131-3 DUT
+
+## Day 23 - 28.05.2026
+- Analog Input (AI): a field signal (4-20 mA / 0-10 V) that the module turns into a raw number (Rohwert, 0-27648 on Siemens)
+- you can create and fill a struct in one line: struct AnalogInput test = {0, 13824, 0.0};
+- print floats with %f, use %.1f for one decimal so it looks clean
+- pitfall: int / int = int in C, so 13824 / 27648 gives 0, then 0 * 100 = 0
+- fix: make one side a float -> 27648.0, then the result becomes 0.5 and scaling works
+- in automation always make sensor scaling division a float, or temperature/pressure comes out silently wrong with no compiler error
+
